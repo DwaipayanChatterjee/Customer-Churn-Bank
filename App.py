@@ -5,7 +5,7 @@ import joblib
 
 
 def main():
-    st.title(":blue[Created By Dwaipayan Chatterjee] :sunglasses:")
+    st.title(":blue[Created By Dwaipayan Chatterjee]:sunglasses:")
     html_temp = """
         <div style="background:#FA8072 ;padding:10px">
         <h2 style="color:white;text-align:center;">Bank Churn Prediction</h2>
