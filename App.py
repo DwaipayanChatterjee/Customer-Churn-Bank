@@ -5,10 +5,10 @@ import joblib
 
 
 def main():
-    st.title("Bank Customers Churn")
+    st.title(":Blue[Bank Customers Churn]")
     html_temp = """
         <div style="background:#025246 ;padding:10px">
-        <h2 style="color:white;text-align:center;">Bank Churn Prediction ML App </h2>
+        <h2 style="color:white;text-align:center;">Bank Churn Prediction</h2>
         </div>
         """
     st.markdown(html_temp, unsafe_allow_html = True)
