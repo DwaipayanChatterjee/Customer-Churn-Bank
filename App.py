@@ -7,7 +7,7 @@ import joblib
 def main():
     st.title(":blue[Bank Customers Churn] :sunglasses:")
     html_temp = """
-        <div style="background:#025246 ;padding:10px">
+        <div style="background:#FFA07A ;padding:10px">
         <h2 style="color:white;text-align:center;">Bank Churn Prediction</h2>
         </div>
         """
