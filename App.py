@@ -14,6 +14,7 @@ def main():
     st.markdown(html_temp, unsafe_allow_html = True)
 
     CustomerId = st.number_input("CustomerId", 0)
+    Surname = st.text_input("Surname", "")
     CreditScore = st.number_input("CreditScore", 0)
     Age = st.slider("Age", 10, 100)
     Tenure = st.selectbox("Tenure", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
@@ -26,8 +27,8 @@ def main():
     Gender = st.selectbox("Gender", ["Male", "Female"])
 
     if st.button("Predict"):
-        features = ["CreditScore", "Age", "Tenure", "Balance", "NumOfProducts","HasChckng", "IsActiveMember", "EstimatedSalary", "Geography", "Gender"]
-        row = np.array([CreditScore, Age, Tenure, Balance, NumOfProducts, HasChckng, IsActiveMember, EstimatedSalary, Geography, Gender])
+        features = ["Surname", "CreditScore", "Age", "Tenure", "Balance", "NumOfProducts","HasChckng", "IsActiveMember", "EstimatedSalary", "Geography", "Gender"]
+        row = np.array([Surname, CreditScore, Age, Tenure, Balance, NumOfProducts, HasChckng, IsActiveMember, EstimatedSalary, Geography, Gender])
         X = pd.DataFrame([row], columns = features)
         predictions = None
         threshold = 0.5
