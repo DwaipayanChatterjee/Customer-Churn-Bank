@@ -39,5 +39,5 @@ def main():
         else:
             st.success(f"Predicted Probability : {output}. \nThis customer isn't likely to churn :thumbsup:")
 
-# if __name__=='__main__': 
+if __name__=='__main__': 
     main()
