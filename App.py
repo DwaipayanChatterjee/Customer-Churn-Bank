@@ -5,13 +5,12 @@ import joblib
 
 
 def main():
-    #st.title(":blue[Bank Customers Churn] :sunglasses:")
+    st.title(":blue[Bank Customers Churn] :sunglasses:")
     html_temp = """
         <div style="background:#025246 ;padding:10px">
         <h2 style="color:white;text-align:center;">Bank Churn Prediction</h2>
         </div>
         """
-    st.title(html_temp)
     st.markdown(html_temp, unsafe_allow_html = True)
 
     CustomerId = st.number_input("CustomerId", 0)
