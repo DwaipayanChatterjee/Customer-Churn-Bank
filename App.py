@@ -20,7 +20,7 @@ def main():
     Tenure = st.selectbox("Tenure", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     Balance = st.number_input("Balance", 0)
     NumOfProducts = st.selectbox("NumOfProducts", [1, 2, 3, 4])
-    HasChckng = st.selectbox("HasCrCard", [0, 1])
+    HasChckng = st.selectbox("HasChckng", [0, 1])
     IsActiveMember = st.selectbox("IsActiveMember", [0, 1])
     EstimatedSalary = st.number_input("EstimatedSalary", 0)
     Geography = st.selectbox("Geography", ["Central", "East", "West"])
