@@ -26,6 +26,7 @@ def main():
     Gender = st.selectbox("Gender", ["Male", "Female"])
 
     if st.button("Predict"):
+        features = ["CreditScore", "Age", "Tenure", "Balance", "NumOfProducts","HasChckng", "IsActiveMember", "EstimatedSalary", "Geography", "Gender"]
         row = np.array([CreditScore, Age, Tenure, Balance, NumOfProducts, HasChckng, IsActiveMember, EstimatedSalary, Geography, Gender])
         X = pd.DataFrame([row], columns = features)
         predictions = None
