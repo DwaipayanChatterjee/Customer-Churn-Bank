@@ -34,7 +34,7 @@ def main():
         threshold = 0.5
 
         cat_model = joblib.load("CAT_Model.pkl")
-        predictions = cat_model.predict(X)[:, 1]
+        predictions = cat_model.predict(X)
 
         if predictions > threshold:
             st.success(f"Predicted Probability : {output}. \nThis customer is likely to churn :thumbsdown:")
