@@ -37,9 +37,9 @@ def main():
         predictions = cat_model.predict(X)
 
         if predictions > threshold:
-            st.success(f"Predicted Probability : {output}. \nThis customer is likely to churn :thumbsdown:")
+            st.success(f"Predicted Probability : {predictions}. \nThis customer is likely to churn :thumbsdown:")
         else:
-            st.success(f"Predicted Probability : {output}. \nThis customer isn't likely to churn :thumbsup:")
+            st.success(f"Predicted Probability : {predictions}. \nThis customer isn't likely to churn :thumbsup:")
 
 if __name__=='__main__': 
     main()
