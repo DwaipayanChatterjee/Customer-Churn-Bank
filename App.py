@@ -27,8 +27,8 @@ def main():
     Gender = st.selectbox("Gender", ["Male", "Female"])
 
     if st.button("Predict"):
-        features = ["Surname", "CreditScore", "Age", "Tenure", "Balance", "NumOfProducts","HasChckng", "IsActiveMember", "EstimatedSalary", "Geography", "Gender"]
-        row = np.array([Surname, CreditScore, Age, Tenure, Balance, NumOfProducts, HasChckng, IsActiveMember, EstimatedSalary, Geography, Gender])
+        features = ["Surname", "CreditScore", "Geography", "Gender", "Age", "Tenure", "Balance", "NumOfProducts", "HasChckng", "IsActiveMember", "EstimatedSalary"]
+        row = np.array([Surname, CreditScore, Geography, Gender, Age, Tenure, Balance, NumOfProducts, HasChckng, IsActiveMember, EstimatedSalary])
         X = pd.DataFrame([row], columns = features)
         predictions = None
         threshold = 0.5
