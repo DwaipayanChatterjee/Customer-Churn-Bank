@@ -13,18 +13,19 @@ def main():
         """
     st.markdown(html_temp, unsafe_allow_html = True)
     form = st.form(key="Form1")
-    c1, c2, = st.columns(2)
+    c1, c2, c3= st.columns(3)
     
     with c1:
         CustomerId = st.number_input("CustomerId", 0)
         Surname = st.text_input("Surname", "")
         CreditScore = st.number_input("CreditScore", 0)
         Age = st.slider("Age", 10, 100)
+    with c2:
         Tenure = st.selectbox("Tenure", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
         Balance = st.number_input("Balance", 0)
-    with c2:
         NumOfProducts = st.selectbox("NumOfProducts", [1, 2, 3, 4])
         HasChckng = st.selectbox("HasChckng", [0, 1])
+    with c3:
         IsActiveMember = st.selectbox("IsActiveMember", [0, 1])
         EstimatedSalary = st.number_input("EstimatedSalary", 0)
         Geography = st.selectbox("Geography", ["Central", "East", "West"])
